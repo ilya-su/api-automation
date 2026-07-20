@@ -1,0 +1,28 @@
+smoke:
+  - register:
+      path: "/user_services/register"
+      json:
+        username: "test_01"
+        password: "1234"
+        nickname: "test_001"
+    login:
+      path: "/user_services/login"
+      json:
+        username: "test_01"
+        password: "1234"
+    add_to_cart:
+      path: "add_to_cart"
+      json:
+        items:
+          - product_id: 3
+            quantity: 1
+    order:
+      path: "/order"
+      json:
+        cart_id:
+    pay:
+      path: "/pay"
+      json:
+        main_order_id:
+    user_info:
+      path: "user_services/user_info"

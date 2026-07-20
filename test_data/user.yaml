@@ -1,0 +1,8 @@
+user_tests:
+  - case-id: "USER-001"
+    desc: "正常登录流程"
+    path: "user_services/login"
+    json:
+      username: "user1"
+      password: "password123"
+    expected: ""
