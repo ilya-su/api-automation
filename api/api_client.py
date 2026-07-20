@@ -47,7 +47,7 @@ class ApiClient:
                           'AppleWebKit/537.36 (KHTML, like Gecko) '
                           'Chrome/131.0.0.0 Safari/537.36'  # 定义浏览器属性
         }
-        # 读取ApiClient实例中公共token是否存在，如果存在则自动添加到请求头作为关联数据。
+        # 读取ApiClient实例中公共token是否存在， 如果存在则自动添加到请求头作为关联数据。
         if self.token:
             base_headers['Authorization'] = f"Bearer {self.token}"
         # 基于有新增额外请求头信息的基础上，进行请求头内容添加
