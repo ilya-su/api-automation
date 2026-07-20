@@ -11,7 +11,7 @@ def api():
 
 @pytest.fixture(scope='session')
 def set_env(request, api):
-    """修改环境的方法。实现对API的环境读取的切换"""
+    """修改环境的方法。 实现对API的环境读取的切换"""
     env = request.param
     api.set_env(env)
 

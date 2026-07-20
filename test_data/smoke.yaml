@@ -26,3 +26,4 @@ smoke:
         main_order_id:
     user_info:
       path: "user_services/user_info"
+
