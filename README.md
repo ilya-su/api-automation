@@ -156,6 +156,3 @@ resp = api.do_get(path="/user_services/user_info")
 
 ---
 
-## License
-
-MIT
